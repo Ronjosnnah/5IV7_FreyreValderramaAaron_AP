@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DES :)</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <body>
+    
+        <br>
+    
+        <div class="main" align="center">
+    
+            <div class="inputs" align="center">
+                <center><h1>Cifrado DES</h1></center>
+                <br>
+                <table align="center">
+                        <input class="form-control" type="file" id="archivo" oninput="leer()" style="border-style: none; border-radius: 5px ; ">
+                        <br>
+                        <br>
+                        <br>
+                        <h3>Ingresa una clave de solo 8 caracteres SOLO 8</h3>
+                        <br>
+                        <input class="key" type="password" placeholder="Clave" id="clave" maxlength="8" minlength="8" style="border-style: none; border-radius: 5px;">
+                    <td>
+                        <input class="btn btn-info" type="button" value="Cifrar" onclick="cifrar()" style="">
+                    </td>
+                        <br>
+                    <td>
+                        &nbsp;
+                        <input class="btn btn-primary" type="button" value="Descifrar" onclick="descifrar()" style="">
+                    </td>
+                        
+                        <p id="txt"></p>
+                        
+                <div id="resultado"></div>
+                </table>
+                <br>
+                <center>El texto del archivo seleccionado es:</center>
+                <br>
+                <center><div class="vis" id="visualizar" ></div></center>
+                <br>
+                <br>
+            </div>  
+        </div> 
+        
+        <a href="../../index.html">Regresar al Directorio</a>
+    </body>
+
+    <script src="cifrar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/tripledes.js"></script>
+
+</body>
+</html>
